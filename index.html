@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+ 
+    <title>Gafas-fondo</title>
+</head>
+<body>
+ 
+   <section id="fondo_full" ></section>
+  <div class="container" id="container">
+      <div class="lentes">
+      <div id="gafas" class="gafas"><img src="gafas.png" width="350" accept="image/*"  alt="gafas" ></div>
+      <section id="fondo_full2"> </section>
+      <section id="fondo_full3" > </section>
+      <section id="fondo_full4" > </section>
+    </div>
+    <span class="bg_gafas1"  onclick="bg1()"></span>
+    <span class="bg_gafas2"  onclick="bg2()"></span>
+    <span class="bg_gafas3"  onclick="bg2()"></span>
+    <div class="archivo">          
+        <input type="file" id="fondo"  >
+      <button id="button"  onclick="limpiar()">Limpiar todo</button>
+      <button id="button2"  onclick="sinBlur()">Quitar Blur</button>
+      <button id="button3"  onclick="limpiarFondoSolo()">Quitar fondo</button>
+      <!-- <b><button id="button3"  onclick="conBlur()">Con Blur</button></b>   -->
+    </div>
+    <!-- <img src="" id="foto"> -->
+    
+  </div>  
+
+  <script src="index.js" type="text/javascript"></script>
+</body>
+</html>

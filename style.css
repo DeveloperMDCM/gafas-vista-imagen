@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-size: cover ;
+    overflow: hidden;
+    background: #333;
+}
+
+#fondo_full
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.lentes
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ #fondo_full2 , #fondo_full3,  #fondo_full4
+{
+    position: absolute;
+    right: 25px;
+    width: 130px;
+    height: 105px; 
+    background: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 109px 72px 185px 200px;
+    -moz-border-radius: 109px 72px 185px 200px;
+    -webkit-border-radius: 109px 72px 185px 200px;
+  
+}
+#fondo_full3
+{
+    left: 22px;
+}
+
+
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    
+}
+
+#gafas
+{
+    position: absolute;
+    animation: gafas 3s linear infinite;
+   z-index: 2;
+}
+
+@keyframes gafas
+{
+   0%,100%
+   {
+    filter: drop-shadow(0 8px 0 #0f0);
+   } 
+   50% 
+   {
+    filter: drop-shadow(0 8px 0 #00f);
+
+   }
+}
+.archivo
+{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fondo
+{
+    position: absolute;
+    border-radius: 20px;
+    top: 250px;
+    display: inline-block;
+    visibility: hidden;
+    filter: drop-shadow(0 6px 2px #1c1c1dbb);
+}
+
+#fondo::before
+{
+    content: 'Seleccionar imagen'; /* testo por defecto */
+    background: #5678EF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    visibility: visible;
+    cursor: pointer;
+}
+
+#fondo:hover::before
+{
+    background: #000;
+    
+}
+
+button
+{
+    position: relative;
+    top: 280px;
+    display: block;
+    width: 130px;
+    height: 50px;
+    font-size: 1.4rem;
+    background: #5678EF;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 20px;
+    filter: drop-shadow(0 6px 2px #1c1c1dbb);
+
+}
+
+
+
+button:hover 
+{
+    background: #000;
+    color: #fff;
+}
